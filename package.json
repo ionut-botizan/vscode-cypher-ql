@@ -1,0 +1,60 @@
+{
+    "name": "vscode-cypher-ql",
+    "displayName": "Cypher QL",
+    "description": "Syntax highlighting for the Cypher query language",
+    "version": "0.0.1",
+    "publisher": "ionut-botizan",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ionut-botizan/vscode-cypher-ql"
+    },
+    "icon": "assets/logo.png",
+    "galleryBanner": {
+        "color": "#292b31",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "cypher",
+                "aliases": [
+                    "Cypher QL",
+                    "Cypher Query Language",
+                    "cypher"
+                ],
+                "extensions": [
+                    ".cql",
+                    ".cyp",
+                    ".cypher"
+                ],
+                "configuration": "./cypher.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "cypher",
+                "scopeName": "source.cypher",
+                "path": "./syntaxes/cypher-language.json"
+            },
+            {
+                "injectTo": [
+                    "source.js",
+                    "source.ts",
+                    "source.jsx",
+                    "source.js.jsx",
+                    "source.tsx"
+                ],
+                "scopeName": "cypher",
+                "path": "./syntaxes/tagged-template.json"
+            }
+        ]
+    },
+    "dependencies": {}
+}
