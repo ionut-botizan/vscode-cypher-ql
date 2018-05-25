@@ -135,7 +135,7 @@
 					}
 				},
 				{
-					"match": "`.+?`",
+					"match": "\\\\?`.+?\\\\?`",
 					"name": "variable.other.quoted-identifier.cypher"
 				},
 				{
@@ -202,7 +202,7 @@
 					"name": "source.starting-functions.cypher",
 					"patterns": [
 						{
-							"match": "((?:`.+?`)|(?:[a-zA-Z_][a-zA-Z0-9_]*))",
+							"match": "((?:\\\\?`.+?\\\\?`)|(?:[a-zA-Z_][a-zA-Z0-9_]*))",
 							"name": "variable.parameter.relationship-name.cypher"
 						},
 						{
