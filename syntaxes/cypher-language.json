@@ -159,8 +159,12 @@
 		"keywords": {
 			"patterns": [
 				{
-					"match": "(?i)\\b(START|MATCH|WHERE|RETURN|UNION|FOREACH|WITH|AS|LIMIT|SKIP|UNWIND|HAS|DISTINCT|OPTIONAL\\\\s+MATCH|ORDER\\s+BY)\\b",
+					"match": "(?i)\\b(START|MATCH|WHERE|RETURN|UNION|FOREACH|WITH|LIMIT|SKIP|UNWIND|HAS|ORDER\\s+BY)\\b",
 					"name": "keyword.control.clause.cypher"
+				},
+				{
+					"match": "(?i)\\b(AS|DISTINCT|OPTIONAL)\\b",
+					"name": "keyword.control.other.cypher"
 				},
 				{
 					"match": "(?i)\\b(ELSE|END|THEN|CASE|WHEN)\\b",
