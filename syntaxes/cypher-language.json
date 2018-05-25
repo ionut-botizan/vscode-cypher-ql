@@ -7,6 +7,9 @@
 	"name": "Cypher",
 	"patterns": [
 		{
+			"include": "#template-substitution-element"
+		},
+		{
 			"include": "#comments"
 		},
 		{
@@ -97,10 +100,31 @@
 				}
 			]
 		},
+		"template-substitution-element": {
+			"name": "meta.template.expression.ts",
+			"begin": "\\$\\{",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.template-expression.begin.ts"
+				}
+			},
+			"end": "\\}",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.template-expression.end.ts"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts"
+				}
+			],
+			"contentName": "meta.embedded.line.ts"
+		},
 		"identifiers": {
 			"patterns": [
 				{
-					"match": "(\\$?\\{)([a-zA-Z_][a-zA-Z0-9_]*)(\\})",
+					"match": "(\\{)([a-zA-Z_][a-zA-Z0-9_]*)(\\})",
 					"captures": {
 						"1": {
 							"name": "punctuation.definition.template-expression.begin"
@@ -337,6 +361,9 @@
 						},
 						{
 							"include": "#operators"
+						},
+						{
+							"include": "#template-substitution-element"
 						},
 						{
 							"include": "#identifiers"
