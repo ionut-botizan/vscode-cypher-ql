@@ -4,7 +4,7 @@
 	"patterns": [
 		{
 			"contentName": "source.cypher.tagged",
-			"begin": "(cql|cypher(\\.\\w+)?|(/\\* cypher \\*/))\\s*(`)",
+			"begin": "(cql|cypher(\\.\\w+)?)|(/\\* cypher \\*/)\\s*(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "entity.name.function.tagged-template.ts",
