@@ -4,7 +4,7 @@
 	"patterns": [
 		{
 			"contentName": "source.cypher.tagged",
-			"begin": "(cql|cypher(\\.\\w+)?)\\s*(`)",
+			"begin": "(cql|cypher(\\.\\w+)?)|(/\\* cypher \\*/)\\s*(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "entity.name.function.tagged-template.ts",
@@ -15,6 +15,9 @@
 					]
 				},
 				"3": {
+					"name": "comment.cypher.js"
+				},
+				"4": {
 					"name": "punctuation.definition.string.template.end.js string.template.js"
 				}
 			},
