@@ -56,5 +56,8 @@
             }
         ]
     },
-    "dependencies": {}
+    "dependencies": {},
+    "devDependencies": {
+        "vsce": "*"
+    }
 }
