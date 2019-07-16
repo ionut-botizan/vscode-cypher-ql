@@ -179,7 +179,7 @@
 					"name": "keyword.other.indexes.cypher"
 				},
 				{
-					"match": "(?i)\\b(MERGE|DELETE|SET|REMOVE|ON\\s+CREATE|ON\\s+MATCH|CREATE\\s+UNIQUE|CREATE)\\b",
+					"match": "(?i)\\b(MERGE|DELETE|DETACH DELETE|SET|REMOVE|ON\\s+CREATE|ON\\s+MATCH|CREATE\\s+UNIQUE|CREATE)\\b",
 					"name": "keyword.data.definition.cypher keyword.control.clause.cypher"
 				},
 				{
