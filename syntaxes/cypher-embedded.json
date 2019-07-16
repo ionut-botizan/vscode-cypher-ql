@@ -1,5 +1,5 @@
 {
-	"fileTypes": ["js", "jsx", "ts", "tsx"],
+	"fileTypes": ["js", "jsx", "ts", "tsx", "py"],
 	"injectionSelector": "L:source -comment -string",
 	"patterns": [
 		{
@@ -37,6 +37,33 @@
 			"endCaptures": {
 				"0": {
 					"name": "punctuation.definition.string.template.end string.template"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.cypher"
+				}
+			]
+		},
+
+		{
+			"contentName": "source.cypher.embedded.python",
+			"begin": "(\"\"\")(\\/\\/\\s*)(cql|cypher)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.definition.string.begin.python"
+				},
+				"2": {
+					"name": "comment.line.double-slash.cypher"
+				},
+				"3": {
+					"name": "keyword.control.function"
+				}
+			},
+			"end": "(\"\"\")",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.python"
 				}
 			},
 			"patterns": [
