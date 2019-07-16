@@ -52,7 +52,7 @@
                     "source.tsx"
                 ],
                 "scopeName": "cypher",
-                "path": "./syntaxes/tagged-template.json"
+                "path": "./syntaxes/cypher-embedded.json"
             }
         ]
     },
