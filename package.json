@@ -2,7 +2,7 @@
     "name": "vscode-cypher-ql",
     "displayName": "Cypher QL",
     "description": "Syntax highlighting for the Cypher query language",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "ionut-botizan",
     "license": "MIT",
     "repository": {
