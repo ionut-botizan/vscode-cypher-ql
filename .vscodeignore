@@ -1,1 +1,4 @@
 .vscode/**
+.gitignore
+azure-pipelines.yml
+README.md
